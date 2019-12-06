@@ -173,7 +173,7 @@ html{
   overflow: hidden;
 }
 .divbox{
-background-image: url("images/seedlingimg-ourservice.jpg");
+background-image: url("Images/seedlingimg-ourservice.jpg");
 background-repeat: no-repeat;
 color:white;
 background-size: cover;
@@ -535,27 +535,27 @@ width: 50px;
     height: 40px;
 }
 #tw:hover{
-content:url("images/twitter-icon2.gif");
+content:url("Images/twitter-icon2.gif");
 
 }
 #wp{
   height: 40px;
 }
 #wp:hover{
-content:url("images/whatsapp-icon2.gif");
+content:url("Images/whatsapp-icon2.gif");
 
 }
 #in{
   height: 40px;
 }
 #in:hover{
-content:url("images/In-icon2.gif");
+content:url("Images/In-icon2.gif");
 
 }
 #fb{
   height: 40px;
 }
 #fb:hover{
-content:url("images/fb-icon2.gif");
+content:url("Images/fb-icon2.gif");
 
 }
