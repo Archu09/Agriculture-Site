@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html > 
+     
+        <title>Wheat Crop_cereal</title>
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css">
+        <script src="bootstrap-4.3.1-dist/jquery-3.4.1.min.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+             <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <!--Nav Bar-->
+             <nav class="navbar navbar-expand-lg navbar-dark  bg-dark static-top">
+                 
+              <a class="navbar-brand" href="index.html" >
+                <img src="Images/logo.gif" id="logo-img"  class="img-fluid" alt="logo"></a>
+              <button class="navbar-toggler" id="btn-hamburger" type="button" data-toggle="collapse" data-target="#navbarscollapse">
+                Menu
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse row " id="navbarscollapse">
+                  <span class="col-2"></span>
+                  <ul class="navbar-nav  col-8 ">
+                  <li class="nav-item active">
+                    <a class="navlink" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navlink" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                          <a class="navlink" href="Our_services.html">our Services</a>
+                        </li>
+                  <li class="nav-item dropdown " >
+                    <a class="nav-link navlink dropdown-toggle" href="#"  id="dropdownmenu" data-toggle="dropdown" style="text-transform: none;" >FARMER ePage</a>
+                    <div class="dropdown-menu"style="background-color: #333; ">
+                      <a class="dropdown-item navlink-dropdown" href="FOF.html">Agriculture Crops Information  </a>
+                      <a class="dropdown-item navlink-dropdown" href="Farmer-safety.html">Farmer Safety</a>
+                      <a class="dropdown-item navlink-dropdown" href="Farmer-Access-services.html">Farmers' Access to Services</a>
+                    </div>
+                  </li>
+                </ul>
+                <ul class=" navbar-nav col-2">
+                      <form style="width:100%;" action="contact.html" >
+                              <button type="submit" class="btn btn-sm" id="nav-button">Get in Touch</button>
+                          </form>
+                </ul>
+                </div>
+              
+            </nav>
+             <!--Nav Bar End-->
+          </header>
+           <main>
+             <!--Cereal section-->
+                <section>
+ <div class="container-fluid">
+  <!--Toggle Menu-->
+ <div class="row">
+  <div class="col-md-12">
+      <div id="wrapper">
+          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+          <button class="btn btn-style" >
+              <a style="text-decoration: none;" href="cerealsindex.html">Back To Cereals Types</a>
+          </button>
+          <hr style="border: darkgoldenrod 1px solid;margin:0px;">
+
+  </div>
+  </div>
+ </div>
+
+<!-- Page-wrapper -->
+<div class="row">
+    <div class="col-md-3"  >
+        <div id="page-content-wrapper"   >
+                <!-- Sidebar -->
+              <div  id="sidebar-wrapper">
+                        <div class="container3">
+                                <div class="menu-box">
+                                <div class="box">
+                                                <a class="a-ele" href="cereal_wheat.html">Home page of Wheat</a>
+                                </div>
+                                <div class="box">
+                                        <a class="a-ele" href="wheat-field.html">Field Preparation</a>
+                                </div>
+                                <div class="box">
+                                        <a class="a-ele" href="wheat_plantprotection.html">Plant Diseases</a>
+                                </div>
+                                
+                                <div class="box">
+                                        <a class="a-ele" href="wheat_harvest.html">Harvesting and Storage</a>
+                                </div>
+                               
+                                </div>
+                            </div>
+                        </div>
+                </div> 
+    </div>
+
+    <div class="col-md-9">
+        <div  id="content" style="margin:1px;float:right;">
+              
+                    <h2 style="text-align: center;padding: 6px;">Cultivation Practices and Information about Wheat</h2>
+                    <div class="row" style="margin:6px; ">
+                        <div class="col" >
+                                <img style="float: right; "src="images/wheat5.jpg" alt="wheatcultivationimg" class="img-fluid" >
+                        </div>
+                        <div class="col "><img style="float: left;" src="images/wheat-cultivation-farmer.jpg" alt="whatcultivationimg1" class="img-fluid"></div>
+                    </div>
+                        <div class="row">
+                            <div class="col"> 
+                                <p  id="sub-heading">Scientific Name:Triticum spp 
+                                  </p>  
+
+                                <p id="sub-text" style="padding:26px;"><span style="padding:55px;">&nbsp;</span>Wheat is cultivated since pre-historic times in the world. From all possible records, it seems that its center of origin is South Western Asia. It is believed that Aryans brought wheat grains to India and since then it is being grown in India. Records from ancient China show that it is raised there since 2700 BC, and it was also known to Egyptians and inhabitants of Switzerland as early as Stone Age
+                                </p>
+                                <p id="sub-text" style="padding:24px; padding-top:0px;"><span style="padding:55px;">&nbsp;</span> Wheat is the one of the staple foods of north Indian population. Wheat grains are ground in to flour (atta) and consumed mostly in the form of chapati  or leavened bread. Soft wheat is used for making chapati, bread, cake, biscuits, pastry and other bakery products whereas hard wheat is used for manufacturing rawa, suji, and sewaya. In areas where rice is a staple food grain, wheat is also eaten in the form of puri etc. It is also used for making cakes and sweet meats etc. Wheat grain is used for preparing starch. Wheat straw is used as fodder, padding material and mulching material.
+                                </p>
+                                
+                            </div>
+                        </div> 
+           
+</div>
+
+</div>
+
+
+</div>
+
+
+ </div>
+                </section>
+
+           </main>
+
+           
+  <script>
+   $("#menu-toggle").click(function(e) {
+        $("#sidebar-wrapper").toggle();
+    });
+
+    var expandCollapse = function(){
+        if ( $(window).width() < 768 ) {
+            $(function(){
+                $('#sidebar-wrapper').hide();
+                });
+        }
+        else {
+            $(function(){
+                $('#sidebar-wrapper').show();
+            });
+        }
+    }
+    $(window).resize(expandCollapse); 
+  </script>
+                
+
+    </body>
+</html>

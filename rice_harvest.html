@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html > 
+     
+        <title>rice-harvest</title>
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css">
+        <script src="bootstrap-4.3.1-dist/jquery-3.4.1.min.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+             <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header>
+        <!--Nav Bar-->
+         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark static-top">
+             
+          <a class="navbar-brand" href="index.html" >
+            <img src="Images/logo.gif" id="logo-img"  class="img-fluid" alt="logo"></a>
+          <button class="navbar-toggler" id="btn-hamburger" type="button" data-toggle="collapse" data-target="#navbarscollapse">
+            Menu
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse row " id="navbarscollapse">
+              <span class="col-2"></span>
+              <ul class="navbar-nav  col-8 ">
+              <li class="nav-item active">
+                <a class="navlink" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                      <a class="navlink" href="Our_services.html">our Services</a>
+                    </li>
+              <li class="nav-item dropdown " >
+                <a class="nav-link navlink dropdown-toggle" href="#"  id="dropdownmenu" data-toggle="dropdown" style="text-transform: none;" >FARMER ePage</a>
+                <div class="dropdown-menu"style="background-color: #333; ">
+                  <a class="dropdown-item navlink-dropdown" href="FOF.html">Agriculture Crops Information  </a>
+                  <a class="dropdown-item navlink-dropdown" href="Farmer-safety.html">Farmer Safety</a>
+                  <a class="dropdown-item navlink-dropdown" href="Farmer-Access-services.html">Farmers' Access to Services</a>
+                </div>
+              </li>
+            </ul>
+            <ul class=" navbar-nav col-2">
+                  <form style="width:100%;" action="contact.html" >
+                          <button type="submit" class="btn btn-sm" id="nav-button">Get in Touch</button>
+                      </form>
+            </ul>
+            </div>
+          
+        </nav>
+         <!--Nav Bar End-->
+    </header>
+           <main>
+      
+              <!--rice-Harvest section-->
+
+              <section>
+                <div class="container-fluid">
+                     <!--Toggle Menu-->
+                       <div class="row">
+                           <div class="col-md-12">
+                                   <div id="wrapper">
+                                           <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+                                           <button class="btn btn-style" >
+                                               <a style="text-decoration: none;" href="cerealsindex.html">Back To Cereals Types</a>
+                                           </button>
+                                           <hr style="border: darkgoldenrod 1px solid;margin:0px;">
+               
+                                   </div>
+                       
+                           </div>
+                       
+                       </div>
+                           <!-- Page-wrapper -->
+               <div class="row">
+                   <div class="col-md-3"  >
+                           <div id="page-content-wrapper"   >
+                                   <!-- Sidebar -->
+                                 <div  id="sidebar-wrapper">
+                                           <div class="container3">
+                                                   <div class="menu-box">
+                                                   <div class="box">
+                                                                   <a class="a-ele" href="cereal_rice.html">Home page of Paddy</a>
+                                                   </div>
+                                                   <div class="box">
+                                                           <a class="a-ele" href="rice-field.html">Field Preparation</a>
+                                                   </div>
+                                                   <div class="box">
+                                                           <a class="a-ele" href="rice_plant.html">Plant Diseases</a>
+                                                   </div>
+                                                   
+                                                   <div class="box">
+                                                           <a class="a-ele" href="rice_harvest.html">Harvesting and Storage</a>
+                                                   </div>
+                                                  
+                                                   </div>
+                                               </div>
+                                           </div>
+                                   </div> 
+                   </div>
+                   <div class="col-md-9">
+
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8" >
+                                <img src="Images/rice-crop-harvesting.jpg" class="img-fluid" alt="rice-harvesting">
+
+                            </div>
+                            <div class="col-md-2"></div>
+
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-12" style="padding:0px;">
+                                <h4 style="color:green;" class="text-heading">Paddy Harvesting</h4>
+
+                                <p class="text-para"><span style="padding-left:5%;"> </span>One of the essential factors in rice cultivation is in-time rice harvesting otherwise the grains would shed. Irrigation of the field is completely stopped about a week before harvesting. This dehydration process helps in grain ripening. It also hastens maturity. In case of early and medium maturing varieties, harvesting should be carried out 25- 30 days after flowering. The late maturing varieties are harvested 40 days after flowering. They are generally harvested when the moisture content is about 25%. Post harvesting, drying is carried out gradually under shade.</p>
+              
+  
+                              </div>
+                          </div>
+                           
+
+                        
+
+                   
+               
+                   </div>
+               </div>
+               
+                       
+                           
+                </div>
+               
+              </section>
+             
+  
+
+           </main>
+           <script type="text/javascript">
+    
+        $("#menu-toggle").click(function(e) {
+            $("#sidebar-wrapper").toggle();
+        });
+    
+        var expandCollapse = function(){
+            if ( $(window).width() < 768 ) {
+                $(function(){
+                    $('#sidebar-wrapper').hide();
+                    });
+            }
+            else {
+                $(function(){
+                    $('#sidebar-wrapper').show();
+                });
+            }
+        }
+        $(window).resize(expandCollapse); 
+      </script>
+                
+    </body>
+</html>
